@@ -2,6 +2,7 @@ package steps;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class AccountSteps {
 
@@ -12,6 +13,6 @@ public class AccountSteps {
 
     @Then("I should be able to see account details")
     public void iShouldBeAbleToSeeAccountDetails() {
-        System.out.println("Verifying account details");
+        Assert.assertFalse(true);
     }
 }

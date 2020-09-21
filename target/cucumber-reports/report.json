@@ -1,0 +1,1196 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-21T22:48:58.482Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.Hooks.initialize()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "User is able to open an account",
+        "description": "",
+        "id": "account-page;user-is-able-to-open-an-account",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.Hooks.finalize()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.beforeEachTest()"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "I login into the app with \"username\" username and \"password\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "username",
+                  "offset": 27
+                },
+                {
+                  "val": "password",
+                  "offset": 51
+                }
+              ],
+              "location": "steps.LoginSteps.iLoginIntoTheAppWithUsernameAndPassword(java.lang.String,java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.afterEachTest()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.beforeEachTest()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "I navigate to homepage",
+            "match": {
+              "location": "steps.LoginSteps.navigateToHomepage()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.afterEachTest()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.beforeEachTest()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "I should be able to see all my accounts",
+            "match": {
+              "location": "steps.LoginSteps.validateAccountsVisibility()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.afterEachTest()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.beforeEachTest()"
+                }
+              }
+            ],
+            "line": 8,
+            "name": "I click on any account",
+            "match": {
+              "location": "steps.AccountSteps.iClickOnAnyAccount()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.afterEachTest()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:87)\n\tat org.junit.Assert.assertTrue(Assert.java:42)\n\tat org.junit.Assert.assertFalse(Assert.java:65)\n\tat org.junit.Assert.assertFalse(Assert.java:75)\n\tat steps.AccountSteps.iShouldBeAbleToSeeAccountDetails(AccountSteps.java:16)\n\tat ✽.I should be able to see account details(file:///Users/andresbarros/MavenProject/src/test/java/features/Account.feature:9)\n",
+              "duration": 2000000,
+              "status": "failed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.beforeEachTest()"
+                }
+              }
+            ],
+            "line": 9,
+            "name": "I should be able to see account details",
+            "match": {
+              "location": "steps.AccountSteps.iShouldBeAbleToSeeAccountDetails()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.afterEachTest()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Account Page",
+    "description": "",
+    "id": "account-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Account.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-21T22:48:58.579Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.Hooks.initialize()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "User is able to login successfully",
+        "description": "",
+        "id": "login-page;user-is-able-to-login-successfully",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.Hooks.finalize()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.beforeEachTest()"
+                }
+              }
+            ],
+            "line": 5,
+            "name": "I login into the app with \"username\" username and \"password\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "username",
+                  "offset": 27
+                },
+                {
+                  "val": "password",
+                  "offset": 51
+                }
+              ],
+              "location": "steps.LoginSteps.iLoginIntoTheAppWithUsernameAndPassword(java.lang.String,java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.afterEachTest()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.beforeEachTest()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "I navigate to homepage",
+            "match": {
+              "location": "steps.LoginSteps.navigateToHomepage()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.afterEachTest()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.beforeEachTest()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "I should be able to see all my accounts",
+            "match": {
+              "location": "steps.LoginSteps.validateAccountsVisibility()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.afterEachTest()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-21T22:48:58.595Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.Hooks.initializeSmoke()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "User is able to login successfully with another user",
+        "description": "",
+        "id": "login-page;user-is-able-to-login-successfully-with-another-user",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.Hooks.finalize()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.beforeEachTest()"
+                }
+              }
+            ],
+            "line": 11,
+            "name": "I login into the app with \"Pedro\" username and \"Perez\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Pedro",
+                  "offset": 27
+                },
+                {
+                  "val": "Perez",
+                  "offset": 48
+                }
+              ],
+              "location": "steps.LoginSteps.iLoginIntoTheAppWithUsernameAndPassword(java.lang.String,java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.afterEachTest()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.beforeEachTest()"
+                }
+              }
+            ],
+            "line": 12,
+            "name": "I navigate to homepage",
+            "match": {
+              "location": "steps.LoginSteps.navigateToHomepage()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.afterEachTest()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.beforeEachTest()"
+                }
+              }
+            ],
+            "line": 13,
+            "name": "I should be able to see all my accounts",
+            "match": {
+              "location": "steps.LoginSteps.validateAccountsVisibility()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.afterEachTest()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-21T22:48:58.606Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.Hooks.initialize()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "User is able to sign up with the correct information",
+        "description": "",
+        "id": "login-page;user-is-able-to-sign-up-with-the-correct-information",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.Hooks.finalize()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.beforeEachTest()"
+                }
+              }
+            ],
+            "line": 17,
+            "name": "I navigate to sign up page",
+            "match": {
+              "location": "steps.LoginSteps.iNavigateToSignUpPage()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.afterEachTest()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.beforeEachTest()"
+                }
+              }
+            ],
+            "line": 18,
+            "name": "User sign up with the right info",
+            "match": {
+              "location": "steps.LoginSteps.userSignUpWithTheRightInfo(io.cucumber.datatable.DataTable)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.afterEachTest()"
+                }
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Andres",
+                  "abcd",
+                  "andres@bar.com",
+                  "Argentina",
+                  "261262126"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.beforeEachTest()"
+                }
+              }
+            ],
+            "line": 20,
+            "name": "I navigate to homepage",
+            "match": {
+              "location": "steps.LoginSteps.navigateToHomepage()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.afterEachTest()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.beforeEachTest()"
+                }
+              }
+            ],
+            "line": 21,
+            "name": "I should be able to see all my accounts",
+            "match": {
+              "location": "steps.LoginSteps.validateAccountsVisibility()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.afterEachTest()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-21T22:48:58.617Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.Hooks.initializeSmoke()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "User is able to login with many users",
+        "description": "",
+        "id": "login-page;user-is-able-to-login-with-many-users;;2",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.Hooks.finalize()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.beforeEachTest()"
+                }
+              }
+            ],
+            "line": 25,
+            "name": "I navigate to sign up page",
+            "match": {
+              "location": "steps.LoginSteps.iNavigateToSignUpPage()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.afterEachTest()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.beforeEachTest()"
+                }
+              }
+            ],
+            "line": 26,
+            "name": "I login into the app with \"user1\" username and \"pass1\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "user1",
+                  "offset": 27
+                },
+                {
+                  "val": "pass1",
+                  "offset": 48
+                }
+              ],
+              "location": "steps.LoginSteps.iLoginIntoTheAppWithUsernameAndPassword(java.lang.String,java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.afterEachTest()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.beforeEachTest()"
+                }
+              }
+            ],
+            "line": 27,
+            "name": "I navigate to homepage",
+            "match": {
+              "location": "steps.LoginSteps.navigateToHomepage()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.afterEachTest()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.beforeEachTest()"
+                }
+              }
+            ],
+            "line": 28,
+            "name": "I should be able to see all my accounts",
+            "match": {
+              "location": "steps.LoginSteps.validateAccountsVisibility()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.afterEachTest()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-21T22:48:58.628Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.Hooks.initializeSmoke()"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "User is able to login with many users",
+        "description": "",
+        "id": "login-page;user-is-able-to-login-with-many-users;;3",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.Hooks.finalize()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.beforeEachTest()"
+                }
+              }
+            ],
+            "line": 25,
+            "name": "I navigate to sign up page",
+            "match": {
+              "location": "steps.LoginSteps.iNavigateToSignUpPage()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.afterEachTest()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.beforeEachTest()"
+                }
+              }
+            ],
+            "line": 26,
+            "name": "I login into the app with \"user2\" username and \"pass2\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "user2",
+                  "offset": 27
+                },
+                {
+                  "val": "pass2",
+                  "offset": 48
+                }
+              ],
+              "location": "steps.LoginSteps.iLoginIntoTheAppWithUsernameAndPassword(java.lang.String,java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.afterEachTest()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.beforeEachTest()"
+                }
+              }
+            ],
+            "line": 27,
+            "name": "I navigate to homepage",
+            "match": {
+              "location": "steps.LoginSteps.navigateToHomepage()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.afterEachTest()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.beforeEachTest()"
+                }
+              }
+            ],
+            "line": 28,
+            "name": "I should be able to see all my accounts",
+            "match": {
+              "location": "steps.LoginSteps.validateAccountsVisibility()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.afterEachTest()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-21T22:48:58.638Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.Hooks.initializeSmoke()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "User is able to login with many users",
+        "description": "",
+        "id": "login-page;user-is-able-to-login-with-many-users;;4",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.Hooks.finalize()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.beforeEachTest()"
+                }
+              }
+            ],
+            "line": 25,
+            "name": "I navigate to sign up page",
+            "match": {
+              "location": "steps.LoginSteps.iNavigateToSignUpPage()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.afterEachTest()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.beforeEachTest()"
+                }
+              }
+            ],
+            "line": 26,
+            "name": "I login into the app with \"user3\" username and \"pass3\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "user3",
+                  "offset": 27
+                },
+                {
+                  "val": "pass3",
+                  "offset": 48
+                }
+              ],
+              "location": "steps.LoginSteps.iLoginIntoTheAppWithUsernameAndPassword(java.lang.String,java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.afterEachTest()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.beforeEachTest()"
+                }
+              }
+            ],
+            "line": 27,
+            "name": "I navigate to homepage",
+            "match": {
+              "location": "steps.LoginSteps.navigateToHomepage()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.afterEachTest()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.beforeEachTest()"
+                }
+              }
+            ],
+            "line": 28,
+            "name": "I should be able to see all my accounts",
+            "match": {
+              "location": "steps.LoginSteps.validateAccountsVisibility()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.afterEachTest()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Login Page",
+    "description": "",
+    "id": "login-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Login.feature",
+    "tags": []
+  }
+]
