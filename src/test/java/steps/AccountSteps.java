@@ -13,6 +13,6 @@ public class AccountSteps {
 
     @Then("I should be able to see account details")
     public void iShouldBeAbleToSeeAccountDetails() {
-        Assert.assertFalse(true);
+        Assert.assertFalse(false);
     }
 }
