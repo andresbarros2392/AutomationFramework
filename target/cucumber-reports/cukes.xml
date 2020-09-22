@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="0.339">
-<testcase classname="Account Page" name="User is able to open an account" time="0.078">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="0.304">
+<testcase classname="Account Page" name="User is able to open an account" time="0.068">
 <failure message="" type="java.lang.AssertionError"><![CDATA[Given I login into the app with "username" username and "password" password.passed
 When I navigate to homepage.................................................passed
 Then I should be able to see all my accounts................................passed
@@ -17,26 +17,26 @@ java.lang.AssertionError
 	at ✽.I should be able to see account details(file:///Users/andresbarros/MavenProject/src/test/java/features/Account.feature:9)
 ]]></failure>
 </testcase>
-<testcase classname="Login Page" name="User is able to login successfully" time="0.009">
+<testcase classname="Login Page" name="User is able to login successfully" time="0.011">
 <system-out><![CDATA[Given I login into the app with "username" username and "password" password.passed
 When I navigate to homepage.................................................passed
 Then I should be able to see all my accounts................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login Page" name="User is able to login successfully with another user" time="0.003">
+<testcase classname="Login Page" name="User is able to login successfully with another user" time="0.005">
 <system-out><![CDATA[Given I login into the app with "Pedro" username and "Perez" password.......passed
 When I navigate to homepage.................................................passed
 Then I should be able to see all my accounts................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login Page" name="User is able to sign up with the correct information" time="0.004">
+<testcase classname="Login Page" name="User is able to sign up with the correct information" time="0.005">
 <system-out><![CDATA[Given I navigate to sign up page............................................passed
 When User sign up with the right info.......................................passed
 When I navigate to homepage.................................................passed
 Then I should be able to see all my accounts................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login Page" name="User is able to login with many users" time="0.005">
+<testcase classname="Login Page" name="User is able to login with many users" time="0.004">
 <system-out><![CDATA[Given I navigate to sign up page............................................passed
 When I login into the app with "user1" username and "pass1" password........passed
 When I navigate to homepage.................................................passed
@@ -50,7 +50,7 @@ When I navigate to homepage.................................................pass
 Then I should be able to see all my accounts................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login Page" name="User is able to login with many users 3" time="0.005">
+<testcase classname="Login Page" name="User is able to login with many users 3" time="0.004">
 <system-out><![CDATA[Given I navigate to sign up page............................................passed
 When I login into the app with "user3" username and "pass3" password........passed
 When I navigate to homepage.................................................passed
