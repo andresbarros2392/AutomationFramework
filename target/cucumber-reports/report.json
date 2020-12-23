@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-09-21T23:00:32.255Z",
+        "start_timestamp": "2020-12-23T19:04:35.149Z",
         "before": [
           {
             "result": {
-              "duration": 2000000,
+              "duration": 12518000000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 4,
-        "name": "User is able to open an account",
+        "line": 18,
+        "name": "Search for items and move to checkout page",
         "description": "",
-        "id": "account-page;user-is-able-to-open-an-account",
+        "id": "search-page;search-for-items-and-move-to-checkout-page;;2",
         "after": [
           {
             "result": {
-              "duration": 1000000,
+              "duration": 57000000,
               "status": "passed"
             },
             "match": {
@@ -31,366 +31,11 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.beforeEachTest()"
-                }
-              }
-            ],
-            "line": 5,
-            "name": "I login into the app with \"username\" username and \"password\" password",
-            "match": {
-              "arguments": [
-                {
-                  "val": "username",
-                  "offset": 27
-                },
-                {
-                  "val": "password",
-                  "offset": 51
-                }
-              ],
-              "location": "steps.LoginSteps.iLoginIntoTheAppWithUsernameAndPassword(java.lang.String,java.lang.String)"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.afterEachTest()"
-                }
-              }
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.beforeEachTest()"
-                }
-              }
-            ],
-            "line": 6,
-            "name": "I navigate to homepage",
-            "match": {
-              "location": "steps.LoginSteps.navigateToHomepage()"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.afterEachTest()"
-                }
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "duration": 1000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.beforeEachTest()"
-                }
-              }
-            ],
-            "line": 7,
-            "name": "I should be able to see all my accounts",
-            "match": {
-              "location": "steps.LoginSteps.validateAccountsVisibility()"
-            },
-            "after": [
-              {
-                "result": {
-                  "duration": 1000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.afterEachTest()"
-                }
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.beforeEachTest()"
-                }
-              }
-            ],
-            "line": 8,
-            "name": "I click on any account",
-            "match": {
-              "location": "steps.AccountSteps.iClickOnAnyAccount()"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.afterEachTest()"
-                }
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:87)\n\tat org.junit.Assert.assertTrue(Assert.java:42)\n\tat org.junit.Assert.assertFalse(Assert.java:65)\n\tat org.junit.Assert.assertFalse(Assert.java:75)\n\tat steps.AccountSteps.iShouldBeAbleToSeeAccountDetails(AccountSteps.java:16)\n\tat ✽.I should be able to see account details(file:///Users/andresbarros/MavenProject/src/test/java/features/Account.feature:9)\n",
-              "duration": 2000000,
-              "status": "failed"
-            },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.beforeEachTest()"
-                }
-              }
-            ],
-            "line": 9,
-            "name": "I should be able to see account details",
-            "match": {
-              "location": "steps.AccountSteps.iShouldBeAbleToSeeAccountDetails()"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.afterEachTest()"
-                }
-              }
-            ],
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Regression"
-          }
-        ]
-      }
-    ],
-    "name": "Account Page",
-    "description": "",
-    "id": "account-page",
-    "keyword": "Feature",
-    "uri": "file:src/test/java/features/Account.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "start_timestamp": "2020-09-21T23:00:32.341Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "hooks.Hooks.initialize()"
-            }
-          }
-        ],
-        "line": 4,
-        "name": "User is able to login successfully",
-        "description": "",
-        "id": "login-page;user-is-able-to-login-successfully",
-        "after": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "hooks.Hooks.finalize()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.beforeEachTest()"
-                }
-              }
-            ],
-            "line": 5,
-            "name": "I login into the app with \"username\" username and \"password\" password",
-            "match": {
-              "arguments": [
-                {
-                  "val": "username",
-                  "offset": 27
-                },
-                {
-                  "val": "password",
-                  "offset": 51
-                }
-              ],
-              "location": "steps.LoginSteps.iLoginIntoTheAppWithUsernameAndPassword(java.lang.String,java.lang.String)"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.afterEachTest()"
-                }
-              }
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.beforeEachTest()"
-                }
-              }
-            ],
-            "line": 6,
-            "name": "I navigate to homepage",
-            "match": {
-              "location": "steps.LoginSteps.navigateToHomepage()"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.afterEachTest()"
-                }
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.beforeEachTest()"
-                }
-              }
-            ],
-            "line": 7,
-            "name": "I should be able to see all my accounts",
-            "match": {
-              "location": "steps.LoginSteps.validateAccountsVisibility()"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.afterEachTest()"
-                }
-              }
-            ],
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Regression"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-09-21T23:00:32.359Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "hooks.Hooks.initializeSmoke()"
-            }
-          }
-        ],
-        "line": 10,
-        "name": "User is able to login successfully with another user",
-        "description": "",
-        "id": "login-page;user-is-able-to-login-successfully-with-another-user",
-        "after": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "hooks.Hooks.finalize()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
+              "duration": 679000000,
               "status": "passed"
             },
             "before": [
@@ -404,19 +49,9 @@
               }
             ],
             "line": 11,
-            "name": "I login into the app with \"Pedro\" username and \"Perez\" password",
+            "name": "User is on GreenKart landing page",
             "match": {
-              "arguments": [
-                {
-                  "val": "Pedro",
-                  "offset": 27
-                },
-                {
-                  "val": "Perez",
-                  "offset": 48
-                }
-              ],
-              "location": "steps.LoginSteps.iLoginIntoTheAppWithUsernameAndPassword(java.lang.String,java.lang.String)"
+              "location": "steps.SearchSteps.userIsOnGreenKartPage()"
             },
             "after": [
               {
@@ -432,6 +67,7 @@
           },
           {
             "result": {
+              "duration": 172000000,
               "status": "passed"
             },
             "before": [
@@ -445,9 +81,15 @@
               }
             ],
             "line": 12,
-            "name": "I navigate to homepage",
+            "name": "User searches for Brinjal vegetable",
             "match": {
-              "location": "steps.LoginSteps.navigateToHomepage()"
+              "arguments": [
+                {
+                  "val": "Brinjal",
+                  "offset": 18
+                }
+              ],
+              "location": "steps.SearchSteps.userSearchesForVegetable(java.lang.String)"
             },
             "after": [
               {
@@ -463,11 +105,14 @@
           },
           {
             "result": {
-              "status": "passed"
+              "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d87.0.4280.88)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: \u00273.141.5\u0027, revision: \u0027d54ebd709a\u0027, time: \u00272018-11-06T11:42:16\u0027\nSystem info: host: \u0027MacBook-Pro-de-Andres.local\u0027, ip: \u0027fe80:0:0:0:cb0:327b:b2a:b433%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_171\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/x7/pdg9hvkn7qs...}, goog:chromeOptions: {debuggerAddress: localhost:57507}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 9029454bcf16eded4b1e9e123e8a72e3\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\n\tat com.sun.proxy.$Proxy19.click(Unknown Source)\n\tat steps.SearchSteps.userAddsItemsToCart(SearchSteps.java:45)\n\tat ✽.User adds 3 items to cart(file:///Users/andresbarros/MavenProject/src/test/java/features/Search.feature:13)\n",
+              "duration": 348000000,
+              "status": "failed"
             },
             "before": [
               {
                 "result": {
+                  "duration": 1000000,
                   "status": "passed"
                 },
                 "match": {
@@ -476,188 +121,95 @@
               }
             ],
             "line": 13,
-            "name": "I should be able to see all my accounts",
+            "name": "User adds 3 items to cart",
             "match": {
-              "location": "steps.LoginSteps.validateAccountsVisibility()"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.afterEachTest()"
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 10
                 }
-              }
-            ],
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Smoke"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-09-21T23:00:32.371Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "hooks.Hooks.initialize()"
-            }
-          }
-        ],
-        "line": 16,
-        "name": "User is able to sign up with the correct information",
-        "description": "",
-        "id": "login-page;user-is-able-to-sign-up-with-the-correct-information",
-        "after": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "hooks.Hooks.finalize()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "duration": 1000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.beforeEachTest()"
-                }
-              }
-            ],
-            "line": 17,
-            "name": "I navigate to sign up page",
-            "match": {
-              "location": "steps.LoginSteps.iNavigateToSignUpPage()"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.afterEachTest()"
-                }
-              }
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.beforeEachTest()"
-                }
-              }
-            ],
-            "line": 18,
-            "name": "User sign up with the right info",
-            "match": {
-              "location": "steps.LoginSteps.userSignUpWithTheRightInfo(io.cucumber.datatable.DataTable)"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.afterEachTest()"
-                }
-              }
-            ],
-            "rows": [
-              {
-                "cells": [
-                  "Andres",
-                  "abcd",
-                  "andres@bar.com",
-                  "Argentina",
-                  "261262126"
-                ]
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.beforeEachTest()"
-                }
-              }
-            ],
-            "line": 20,
-            "name": "I navigate to homepage",
-            "match": {
-              "location": "steps.LoginSteps.navigateToHomepage()"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.afterEachTest()"
-                }
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.beforeEachTest()"
-                }
-              }
-            ],
-            "line": 21,
-            "name": "I should be able to see all my accounts",
-            "match": {
-              "location": "steps.LoginSteps.validateAccountsVisibility()"
+              ],
+              "location": "steps.SearchSteps.userAddsItemsToCart(java.lang.String)"
             },
             "after": [
               {
                 "result": {
                   "duration": 1000000,
                   "status": "passed"
+                },
+                "match": {
+                  "location": "hooks.Hooks.afterEachTest()"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "hooks.Hooks.beforeEachTest()"
+                }
+              }
+            ],
+            "line": 14,
+            "name": "User proceeds to checkout page",
+            "match": {
+              "location": "steps.SearchSteps.userProceedsToCheckoutPage()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "hooks.Hooks.afterEachTest()"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "hooks.Hooks.beforeEachTest()"
+                }
+              }
+            ],
+            "line": 15,
+            "name": "Verify that 3 items of Brinjal items are displayed in checkout page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 12
+                },
+                {
+                  "val": "Brinjal",
+                  "offset": 23
+                }
+              ],
+              "location": "steps.SearchSteps.verifyThatQtyAndNameAreDisplayedInCheckoutPage(java.lang.String,java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "skipped"
                 },
                 "match": {
                   "location": "hooks.Hooks.afterEachTest()"
@@ -674,25 +226,29 @@
         ]
       },
       {
-        "start_timestamp": "2020-09-21T23:00:32.382Z",
+        "start_timestamp": "2020-12-23T19:04:49.038Z",
         "before": [
           {
             "result": {
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d87.0.4280.88)\nBuild info: version: \u00273.141.5\u0027, revision: \u0027d54ebd709a\u0027, time: \u00272018-11-06T11:42:16\u0027\nSystem info: host: \u0027MacBook-Pro-de-Andres.local\u0027, ip: \u0027fe80:0:0:0:cb0:327b:b2a:b433%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_171\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/x7/pdg9hvkn7qs...}, goog:chromeOptions: {debuggerAddress: localhost:57593}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 259bf345a18c69b140d8aabc831549be\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)\n\tat base.Base.getDriver(Base.java:26)\n\tat hooks.Hooks.initialize(Hooks.java:17)\n",
+              "duration": 3624000000,
+              "status": "failed"
             },
             "match": {
-              "location": "hooks.Hooks.initializeSmoke()"
+              "location": "hooks.Hooks.initialize()"
             }
           }
         ],
-        "line": 31,
-        "name": "User is able to login with many users",
+        "line": 19,
+        "name": "Search for items and move to checkout page",
         "description": "",
-        "id": "login-page;user-is-able-to-login-with-many-users;;2",
+        "id": "search-page;search-for-items-and-move-to-checkout-page;;3",
         "after": [
           {
             "result": {
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d87.0.4280.88)\nBuild info: version: \u00273.141.5\u0027, revision: \u0027d54ebd709a\u0027, time: \u00272018-11-06T11:42:16\u0027\nSystem info: host: \u0027MacBook-Pro-de-Andres.local\u0027, ip: \u0027fe80:0:0:0:cb0:327b:b2a:b433%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_171\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: /var/folders/x7/pdg9hvkn7qs...}, goog:chromeOptions: {debuggerAddress: localhost:57593}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 259bf345a18c69b140d8aabc831549be\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\n\tat org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)\n\tat hooks.Hooks.finalize(Hooks.java:37)\n",
+              "duration": 8000000,
+              "status": "failed"
             },
             "match": {
               "location": "hooks.Hooks.finalize()"
@@ -704,28 +260,27 @@
         "steps": [
           {
             "result": {
-              "status": "passed"
+              "status": "skipped"
             },
             "before": [
               {
                 "result": {
-                  "duration": 1000000,
-                  "status": "passed"
+                  "status": "skipped"
                 },
                 "match": {
                   "location": "hooks.Hooks.beforeEachTest()"
                 }
               }
             ],
-            "line": 25,
-            "name": "I navigate to sign up page",
+            "line": 11,
+            "name": "User is on GreenKart landing page",
             "match": {
-              "location": "steps.LoginSteps.iNavigateToSignUpPage()"
+              "location": "steps.SearchSteps.userIsOnGreenKartPage()"
             },
             "after": [
               {
                 "result": {
-                  "status": "passed"
+                  "status": "skipped"
                 },
                 "match": {
                   "location": "hooks.Hooks.afterEachTest()"
@@ -733,104 +288,150 @@
               }
             ],
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "hooks.Hooks.beforeEachTest()"
+                }
+              }
+            ],
+            "line": 12,
+            "name": "User searches for Brocolli vegetable",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Brocolli",
+                  "offset": 18
+                }
+              ],
+              "location": "steps.SearchSteps.userSearchesForVegetable(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "hooks.Hooks.afterEachTest()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "hooks.Hooks.beforeEachTest()"
+                }
+              }
+            ],
+            "line": 13,
+            "name": "User adds 1 items to cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 10
+                }
+              ],
+              "location": "steps.SearchSteps.userAddsItemsToCart(java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "hooks.Hooks.afterEachTest()"
+                }
+              }
+            ],
+            "keyword": "And "
           },
           {
             "result": {
               "duration": 1000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "before": [
               {
                 "result": {
-                  "status": "passed"
+                  "status": "skipped"
                 },
                 "match": {
                   "location": "hooks.Hooks.beforeEachTest()"
                 }
               }
             ],
-            "line": 26,
-            "name": "I login into the app with \"user1\" username and \"pass1\" password",
+            "line": 14,
+            "name": "User proceeds to checkout page",
             "match": {
-              "arguments": [
-                {
-                  "val": "user1",
-                  "offset": 27
-                },
-                {
-                  "val": "pass1",
-                  "offset": 48
-                }
-              ],
-              "location": "steps.LoginSteps.iLoginIntoTheAppWithUsernameAndPassword(java.lang.String,java.lang.String)"
+              "location": "steps.SearchSteps.userProceedsToCheckoutPage()"
             },
             "after": [
               {
                 "result": {
-                  "status": "passed"
+                  "status": "skipped"
                 },
                 "match": {
                   "location": "hooks.Hooks.afterEachTest()"
                 }
               }
             ],
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.beforeEachTest()"
-                }
-              }
-            ],
-            "line": 27,
-            "name": "I navigate to homepage",
-            "match": {
-              "location": "steps.LoginSteps.navigateToHomepage()"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.afterEachTest()"
-                }
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
+              "status": "skipped"
             },
             "before": [
               {
                 "result": {
                   "duration": 1000000,
-                  "status": "passed"
+                  "status": "skipped"
                 },
                 "match": {
                   "location": "hooks.Hooks.beforeEachTest()"
                 }
               }
             ],
-            "line": 28,
-            "name": "I should be able to see all my accounts",
+            "line": 15,
+            "name": "Verify that 1 items of Brocolli items are displayed in checkout page",
             "match": {
-              "location": "steps.LoginSteps.validateAccountsVisibility()"
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 12
+                },
+                {
+                  "val": "Brocolli",
+                  "offset": 23
+                }
+              ],
+              "location": "steps.SearchSteps.verifyThatQtyAndNameAreDisplayedInCheckoutPage(java.lang.String,java.lang.String)"
             },
             "after": [
               {
                 "result": {
-                  "status": "passed"
+                  "duration": 1000000,
+                  "status": "skipped"
                 },
                 "match": {
                   "location": "hooks.Hooks.afterEachTest()"
@@ -842,359 +443,16 @@
         ],
         "tags": [
           {
-            "name": "@Smoke"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-09-21T23:00:32.391Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "hooks.Hooks.initializeSmoke()"
-            }
-          }
-        ],
-        "line": 32,
-        "name": "User is able to login with many users",
-        "description": "",
-        "id": "login-page;user-is-able-to-login-with-many-users;;3",
-        "after": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "hooks.Hooks.finalize()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.beforeEachTest()"
-                }
-              }
-            ],
-            "line": 25,
-            "name": "I navigate to sign up page",
-            "match": {
-              "location": "steps.LoginSteps.iNavigateToSignUpPage()"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.afterEachTest()"
-                }
-              }
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.beforeEachTest()"
-                }
-              }
-            ],
-            "line": 26,
-            "name": "I login into the app with \"user2\" username and \"pass2\" password",
-            "match": {
-              "arguments": [
-                {
-                  "val": "user2",
-                  "offset": 27
-                },
-                {
-                  "val": "pass2",
-                  "offset": 48
-                }
-              ],
-              "location": "steps.LoginSteps.iLoginIntoTheAppWithUsernameAndPassword(java.lang.String,java.lang.String)"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.afterEachTest()"
-                }
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.beforeEachTest()"
-                }
-              }
-            ],
-            "line": 27,
-            "name": "I navigate to homepage",
-            "match": {
-              "location": "steps.LoginSteps.navigateToHomepage()"
-            },
-            "after": [
-              {
-                "result": {
-                  "duration": 1000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.afterEachTest()"
-                }
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.beforeEachTest()"
-                }
-              }
-            ],
-            "line": 28,
-            "name": "I should be able to see all my accounts",
-            "match": {
-              "location": "steps.LoginSteps.validateAccountsVisibility()"
-            },
-            "after": [
-              {
-                "result": {
-                  "duration": 1000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.afterEachTest()"
-                }
-              }
-            ],
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Smoke"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-09-21T23:00:32.401Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "hooks.Hooks.initializeSmoke()"
-            }
-          }
-        ],
-        "line": 33,
-        "name": "User is able to login with many users",
-        "description": "",
-        "id": "login-page;user-is-able-to-login-with-many-users;;4",
-        "after": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "hooks.Hooks.finalize()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.beforeEachTest()"
-                }
-              }
-            ],
-            "line": 25,
-            "name": "I navigate to sign up page",
-            "match": {
-              "location": "steps.LoginSteps.iNavigateToSignUpPage()"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.afterEachTest()"
-                }
-              }
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.beforeEachTest()"
-                }
-              }
-            ],
-            "line": 26,
-            "name": "I login into the app with \"user3\" username and \"pass3\" password",
-            "match": {
-              "arguments": [
-                {
-                  "val": "user3",
-                  "offset": 27
-                },
-                {
-                  "val": "pass3",
-                  "offset": 48
-                }
-              ],
-              "location": "steps.LoginSteps.iLoginIntoTheAppWithUsernameAndPassword(java.lang.String,java.lang.String)"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.afterEachTest()"
-                }
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.beforeEachTest()"
-                }
-              }
-            ],
-            "line": 27,
-            "name": "I navigate to homepage",
-            "match": {
-              "location": "steps.LoginSteps.navigateToHomepage()"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.afterEachTest()"
-                }
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "before": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.beforeEachTest()"
-                }
-              }
-            ],
-            "line": 28,
-            "name": "I should be able to see all my accounts",
-            "match": {
-              "location": "steps.LoginSteps.validateAccountsVisibility()"
-            },
-            "after": [
-              {
-                "result": {
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "hooks.Hooks.afterEachTest()"
-                }
-              }
-            ],
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Smoke"
+            "name": "@Regression"
           }
         ]
       }
     ],
-    "name": "Login Page",
+    "name": "Search Page",
     "description": "",
-    "id": "login-page",
+    "id": "search-page",
     "keyword": "Feature",
-    "uri": "file:src/test/java/features/Login.feature",
+    "uri": "file:src/test/java/features/Search.feature",
     "tags": []
   }
 ]
